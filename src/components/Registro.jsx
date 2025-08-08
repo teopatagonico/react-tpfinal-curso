@@ -4,6 +4,8 @@ import { useAuth } from "../context/AuthContext"
 import { Link } from "react-router-dom"
 
 const Register = () => {
+  const [name, setName] = useState("")
+  const [surname, setSurname] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState(null)
@@ -44,6 +46,24 @@ const Register = () => {
     <section id="register-section">
       <h1>Registrate</h1>
       <form onSubmit={handleSubmit} >
+        <label htmlFor="name">Nombre:</label>
+        <input
+          type="name"
+          name="name"
+          id="name"
+          onChange={(e) =>
+            setName(e.target.value)}
+        />
+
+        <label htmlFor="surname">Apellido:</label>
+        <input
+          type="surname"
+          name="surname"
+          id="surname"
+          onChange={(e) =>
+            setSurname(e.target.value)}
+        />
+        
         <label htmlFor="email">Correo electrónico:</label>
         <input
           type="email"
