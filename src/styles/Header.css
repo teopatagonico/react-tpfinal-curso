@@ -1,0 +1,26 @@
+.HeaderPagina {
+    background-color: lightgray;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#Links {
+    align-self: center;
+}
+
+.Link {
+    display: grid;
+    align-items: center;
+    justify-self: center;
+}
+
+span {
+    font-size: 2.5vh;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vh;
+}

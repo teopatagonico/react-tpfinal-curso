@@ -1,0 +1,16 @@
+#Producto {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 25px;
+
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.ImagenProducto {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
